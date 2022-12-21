@@ -1,0 +1,432 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: 'Poppins Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Poppins Regular'), url('Poppins-Regular.woff') format('woff');
+    }
+
+html{
+    font-family: 'Poppins Regular',sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+header{
+    background-color: black;
+    width: 100%;
+    color: white;
+    padding-bottom: 1.5rem;
+}
+
+
+.nav{
+    padding: 1rem .7rem 0 .7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.menu p{
+    cursor: pointer;
+}
+
+.shoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shoes p{
+    margin-right: .5rem;
+}
+
+.menu p{
+    z-index: 100;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: lightblue;
+}
+
+.background-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.first-background{
+    width: 100%;
+    padding: 2rem .6rem;
+}
+
+.line{
+    border-left: 2px solid lightblue;
+    padding: 0 2rem 1.3rem ;
+    margin-bottom: 2rem;
+}
+
+.headline h1{
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    line-height: 3.2rem;
+}
+
+.colors{
+    color: lightblue;
+}
+
+.me{
+    margin-top: 2.5rem;
+}
+
+.words-layout p{
+    margin-top: -3rem;
+    font-size: 4rem;
+    opacity: .1;
+}
+
+.second-background{
+    width: 100%;
+    height: 90vh;
+    background-image: url(shoes-pics/shoe3.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-background{
+    width: 100%;
+}
+
+.third-background .social{
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.linest{
+    width: 3rem;
+    height: 2rem;
+    border-top: 2px solid lightblue;
+    border-left: 2px solid lightblue;
+    margin-left: 1rem;
+}
+
+.shoe-headline{
+    padding: 0 2rem;
+}
+
+.shoe-headline h2{
+    font-size: 1.8rem;
+}
+
+.shoe-subheadline p{
+    font-weight: 100;
+    margin-top: 1rem;
+    font-size: .9rem;
+}
+
+.first-shoe{
+    margin-top: 1rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-shoe img{
+    width: 7rem;
+}
+
+.image2{
+    margin-top: -4rem;
+    margin-left: 3rem;
+}
+
+.image3{
+    margin-top: -4rem;
+    margin-left: 6rem;
+}
+
+.linest1{
+    width: 3rem;
+    height: 2rem;
+    border-bottom: 2px solid lightblue;
+    border-right: 2px solid lightblue;
+    margin-left: 15rem;
+}
+
+.shoe-grid div{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shoe-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    -webkit-grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    grid-template-rows: 1fr;
+    -webkit-grid-template-rows: 1fr;
+}
+
+.shoe-container img{
+    width: 15rem;
+}
+
+.shoe-container{
+    margin-top: 2rem;
+}
+
+.details{
+    width: 15rem;
+    height: 7rem;
+    padding: .4rem .6rem;
+    background-color: lightblue;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.order small:last-child{
+    margin-left: 7rem;
+    color: black;
+}
+
+small a{
+    color: black;
+}
+
+small a:hover{
+    color: white;
+}
+
+.second-section{
+    width: 100%;
+    height: fit-content;
+    padding: 2.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.collaboration{
+    margin-bottom: 1rem;
+}
+
+.collaboration h1{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin-bottom: .5rem;
+}
+
+
+.collab-image img{
+    width: 15rem;
+}
+
+.collab-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    background-color: rgba(121, 118, 118, .5);
+}
+
+.fourth-section{
+    background-color: black;
+    width: 100%;
+    height: fit-content;
+    color: white;
+    overflow-x: hidden;
+    margin-top: 1rem;
+}
+
+.section-image img{
+    display: block;
+    margin: auto;
+    transform: rotate(-4deg);
+    width: 14rem;
+    padding: .7rem;
+}
+
+.section-image p{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.section-image h1{
+    display: block;
+    position: relative;
+    top: 9rem;
+    text-align: center;
+    font-size: 3rem;
+    transform: rotate(-4deg);
+    z-index: 10;
+
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: black;
+    margin-top: 5rem;
+}
+
+.copyrights{
+    line-height: 1.2rem;
+    opacity: .8;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer > div{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.creators{
+    text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+    .headline h1{
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    .shoe-headline h2{
+        font-size: 2.5rem;
+    }
+
+    .section-image img{
+        margin-top: -2rem;
+        width: 20rem;
+    }
+
+    .section-image h1{
+        top: 11rem;
+        font-size: 4rem;
+    }
+
+    .second-section{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .collaboration{
+        width: 50%;
+    }
+    
+    .collab-image{
+        margin-top: -.5rem;
+    }
+
+
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .copyrights{
+        margin-top: 15rem;
+    }
+
+    li{
+        padding-top: 1rem;
+    }
+    .creators{
+        margin-top: 17rem;
+    }
+}
+
+@media screen and (min-width: 950px){
+    .background-section{
+        padding-top: 1rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .first-background{
+        width: 100%;
+        padding: 0 .6rem;
+    }
+
+    .headline h1{
+        text-transform: uppercase;
+        font-size: 2.3rem;
+        line-height: 3.2rem;
+    }
+
+    .shoe-headline h2{
+        font-size: 2rem;
+    }
+
+
+    .shoes-images img{
+        width: 5rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .headline h1{
+        text-transform: uppercase;
+        font-size: 2.8rem;
+        line-height: 3.5rem;
+    }
+
+    .first-background{
+        margin-right: 1rem;
+    }
+
+    .shoe-headline h2{
+        font-size: 2.4rem;
+    }
+
+    .section-image img{
+        margin-top: -4rem;
+        width: 23rem;
+    }
+
+    .section-image h1{
+        top: 12rem;
+        font-size: 5rem;
+    }
+}
+
+@media screen and (min-width: 1300px){
+    .first-background{
+        margin-right: 3.3rem;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .first-background{
+        margin-right: 4rem;
+    }
+}
+
+
